@@ -43,6 +43,21 @@ class labelsTemplate:
     def toJson(self):
         return json.dumps(self, default=lambda o: o.__dict__, sort_keys=True, indent=4)
 
+    def applyToRepos(self, owner):
+        cmd = 'gh repo list'
+        json = '--json name'
+        jq = '--jq \".[].name\"'
+
+        process = os.popen('{} {} {} {}'.format(cmd, owner, json, jq))
+        repos = process.read().splitlines()
+        process.close()
+
+        print('Applying to repos: ')
+        print(repos)
+
+        for repo in repos:
+            self.apply(owner, repo)
+
     def apply(self, owner, repo):
         currentLabels = getLabels(owner, repo)
         currentLabelsNames = [x.name for x in currentLabels]
@@ -72,6 +87,6 @@ class labelsTemplate:
 
         print(json.dumps(actions, default=lambda o: o.__dict__,
               sort_keys=True, indent=4))
-        
+
         for x in actions:
             x.execute(owner, repo)
