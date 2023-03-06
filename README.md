@@ -4,5 +4,11 @@ Labels Manager is a tool to manage GitHub labels. It can be used to create, upda
 
 # Use
 
-Developing ...
+Run this to generate the default templates:
+
+```shell
+py main.py --generate-default-templates
+```
+
+which will save the templates to `templates/` folder.
 
