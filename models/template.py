@@ -6,6 +6,14 @@ class labelsTemplate:
     labels = []
 
     def default():
+        path = 'templates/labels.json'
+        if os.path.exists(path):
+            with open(path, 'r') as file:
+                return labelsTemplate([
+                    label(item["name"], item["description"], item["color"])
+                    for item in json.load(file)["labels"]
+                ])
+
         return labelsTemplate([
             label("bug", "Something isn't working", "#D73A4A"),
             label("documentation",
@@ -22,6 +30,16 @@ class labelsTemplate:
             label("wontfix", "This will not be worked on", "#FFFFFF"),
             label("working on", "We are working on this issue", "#D4B4D3"),
         ])
+
+    def build(path):
+        if os.path.exists(path):
+            with open(path, 'r') as file:
+                return labelsTemplate([
+                    label(item["name"], item["description"], item["color"])
+                    for item in json.load(file)["labels"]
+                ])
+        else:
+            return ''
 
     def __init__(self, labels):
         self.labels = labels
