@@ -5,8 +5,7 @@ running = True
 
 
 def main():
-    while (running):
-        pass
+    pass
 
 
 if __name__ == "__main__":

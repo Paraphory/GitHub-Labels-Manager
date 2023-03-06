@@ -2,12 +2,14 @@
 import json
 
 from models.label import label
+import models.template as template
 
 
 def generateDefaultTemplates():
-    pass
+    labels = template.labelsTemplate.default()
+    with open("templates/labels.json", "w") as file:
+        file.write(labels.toJson())
 
 
 if __name__ == "__main__":
-    labels = [label.default()] * 5
-    print(json.dumps(labels, default=lambda o: o.__dict__, sort_keys=True, indent=4))
+    generateDefaultTemplates()

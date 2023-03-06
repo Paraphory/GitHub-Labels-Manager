@@ -1,0 +1,69 @@
+{
+    "labels": [
+        {
+            "color": "#D73A4A",
+            "description": "Something isn't working",
+            "name": "bug"
+        },
+        {
+            "color": "#0075CA",
+            "description": "Improvements or additions to documentation",
+            "name": "documentation"
+        },
+        {
+            "color": "#CFD3D7",
+            "description": "This issue or pull request already exists",
+            "name": "duplicate"
+        },
+        {
+            "color": "#A2EEEF",
+            "description": "New feature or request",
+            "name": "enhancement"
+        },
+        {
+            "color": "#74D971",
+            "description": "This problem has been fixed",
+            "name": "fixed"
+        },
+        {
+            "color": "#008672",
+            "description": "Extra attention is needed",
+            "name": "help wanted"
+        },
+        {
+            "color": "#E4E669",
+            "description": "This doesn't seem right",
+            "name": "invalid"
+        },
+        {
+            "color": "#D93F0B",
+            "description": "Experimental features",
+            "name": "lab"
+        },
+        {
+            "color": "#0922A5",
+            "description": "Pull Request had been merged",
+            "name": "merged"
+        },
+        {
+            "color": "#D876E3",
+            "description": "Further information is requested",
+            "name": "question"
+        },
+        {
+            "color": "#FEF2C0",
+            "description": "This issue is tracking by another issue",
+            "name": "tracking"
+        },
+        {
+            "color": "#FFFFFF",
+            "description": "This will not be worked on",
+            "name": "wontfix"
+        },
+        {
+            "color": "#D4B4D3",
+            "description": "We are working on this issue",
+            "name": "working on"
+        }
+    ]
+}
