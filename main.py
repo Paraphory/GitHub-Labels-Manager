@@ -1,11 +1,15 @@
 ﻿import os
 import sys
+import manager
 
 running = True
 
 
 def main():
-    pass
+    for arg in sys.argv:
+        if arg.lower() == "--generate-default-templates":
+            manager.generateDefaultTemplates()
+            sys.exit(0)
 
 
 if __name__ == "__main__":
