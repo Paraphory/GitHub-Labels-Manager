@@ -64,6 +64,11 @@
             "color": "#D4B4D3",
             "description": "We are working on this issue",
             "name": "working on"
+        },
+        {
+            "color": "#89FFF3",
+            "description": "This issue is a road map",
+            "name": "road map"
         }
     ]
 }
