@@ -29,7 +29,7 @@ class labelsTemplate:
             label("tracking", "This issue is tracking by another issue", "#FEF2C0"),
             label("wontfix", "This will not be worked on", "#FFFFFF"),
             label("working on", "We are working on this issue", "#D4B4D3"),
-            label("road map", "This issue is a road map", "#4C4CE0"),
+            label("roadmap", "This issue is a road map", "#4C4CE0"),
         ])
 
     def build(path):
