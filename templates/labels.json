@@ -69,6 +69,11 @@
             "color": "#4C4CE0",
             "description": "This issue is a road map",
             "name": "roadmap"
+        },
+        {
+            "color": "#699A94",
+            "description": "No response to this issue",
+            "name": "no response"
         }
     ]
 }

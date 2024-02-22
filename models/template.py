@@ -30,6 +30,7 @@ class labelsTemplate:
             label("wontfix", "This will not be worked on", "#FFFFFF"),
             label("working on", "We are working on this issue", "#D4B4D3"),
             label("roadmap", "This issue is a road map", "#4C4CE0"),
+            label("no response", "No response to this issue", "#699A94"),
         ])
 
     def build(path):

@@ -2,6 +2,12 @@
 
 Labels Manager is a tool to manage GitHub labels. It can be used to create, update, delete, and sync labels across multiple repositories.
 
+# Requirements
+
+> **Note**  
+> You need installed GitHub CLI to use this tool. You can download it from [here](https://cli.github.com/).  
+> Make sure you have CLI configured with your GitHub account. You can configure it by running `gh auth login` command.
+
 # Use
 
 Run this to generate the default templates:
