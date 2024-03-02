@@ -74,6 +74,11 @@
             "color": "#699A94",
             "description": "No response to this issue",
             "name": "no response"
+        },
+        {
+            "color": "#FF7070",
+            "description": "Related to security",
+            "name": "security"
         }
     ]
 }
