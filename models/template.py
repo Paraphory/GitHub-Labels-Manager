@@ -32,6 +32,7 @@ class labelsTemplate:
             label("roadmap", "This issue is a road map", "#4C4CE0"),
             label("no response", "No response to this issue", "#699A94"),
             label("security", "Related to security", "#FF7070"),
+            label("dependencies", "Pull requests that update a dependency file", "#0366d6"),
         ])
 
     def build(path):
