@@ -84,6 +84,11 @@
             "color": "#0366d6",
             "description": "Pull requests that update a dependency file",
             "name": "dependencies"
+        },
+        {
+            "color": "#051436",
+            "description": "Feature request or other proposal had been implemented",
+            "name": "implemented"
         }
     ]
 }

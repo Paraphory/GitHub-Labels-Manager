@@ -33,6 +33,7 @@ class labelsTemplate:
             label("no response", "No response to this issue", "#699A94"),
             label("security", "Related to security", "#FF7070"),
             label("dependencies", "Pull requests that update a dependency file", "#0366d6"),
+            label("implemented", "Feature request or other proposal had been implemented", "#051436"),
         ])
 
     def build(path):
